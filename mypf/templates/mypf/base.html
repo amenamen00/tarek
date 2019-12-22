@@ -1,0 +1,60 @@
+{% load static %}
+<!--loaded static files-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web Programming Course</title>
+    <!--adding bootstrap, custom css and fontawesome files-->
+    <link href="{% static 'mypf/bootstrap-4/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mypf/fonts/icomoon/style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'mypf/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'mypf/css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'mypf/css/jquery-ui.css'%}">
+    <link rel="stylesheet" href="{% static 'mypf/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'mypf/css/owl.theme.default.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'mypf/css/bootstrap-datepicker.css'%}">
+
+    <link rel="stylesheet" href="{% static 'mypf/fonts/flaticon/font/flaticon.css'%}">
+
+    <link rel="stylesheet" href="{% static 'mypf/css/aos.css'%}">
+    <link rel="stylesheet" href="{% load static %}{% static 'mypf/css/rangeslider.css'%}">
+
+    <link rel="stylesheet" href="{% static 'mypf/css/style.css'%}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Adding navbar -->
+    {% include 'mypf/navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+    <!--Adding footer -->
+    {% include 'mypf/footer.html' %}
+    <!-- Adding custom js, bootsrap js, jquery and related script files-->
+
+    <script src="{% static 'mypf/js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static 'mypf/js/jquery-migrate-3.0.1.min.js'%}"></script>
+    <script src="{% static 'mypf/js/jquery-ui.js'%}"></script>
+    <script src="{% static 'mypf/js/popper.min.js'%}"></script>
+    <script src="{% static 'mypf/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'mypf/js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'mypf/js/jquery.stellar.min.js'%}"></script>
+    <script src="{% static 'mypf/js/jquery.countdown.min.js'%}"></script>
+    <script src="{% static 'mypf/js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'mypf/js/bootstrap-datepicker.min.js'%}"></script>
+    <script src="{% static 'mypf/js/aos.js'%}"></script>
+    <script src="{% static 'mypf/js/rangeslider.min.js'%}"></script>
+    <script src="{% static 'mypf/js/script.js'%}"></script>
+  
+    <script src="{% static 'mypf/js/main.js'%}"></script>
+</body>
+</html>
